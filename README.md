@@ -24,6 +24,13 @@ This backend repository serves as the core of our open-source job/freelance plat
 - **Authentication**: Implementing authentication mechanisms such as JWT (JSON Web Tokens) in fastapi.(Looking for contributor)
 - **Deployment**: Deploying on Digital Ocean using Docker (Looking for contributor)
 
+## Getting Started
+ - Create and activate your python venv, [Check this out to learn how to do that](https://realpython.com/python-virtual-environments-a-primer/#create-it)
+ - Install required dependencies, `pip install -r requirements.txt`
+ - Now you should get a connection string to the mongodb instance you are going to use, [Check this out to learn how to do that](https://www.youtube.com/watch?v=rE_bJl2GAY8)
+ - Create two environment variables MONGODB_URI and SECRET_KEY, MONGODB_URI is the connection string you got from previous step, [Check this out to learn one way to generate a secret key using python](https://docs.python.org/3/library/secrets.html)
+ - Run your webapp, `uvicorn main:app --reload`
+
 ## How to Contribute
 
 1. **Fork** the repository.
